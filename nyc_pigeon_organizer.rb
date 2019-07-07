@@ -8,13 +8,15 @@ def nyc_pigeon_organizer(data)
       puts "this #{key} is #{attribute}"
       list.each do |name|
         puts "pigeons name is #{name}"
-        if pigeons.key(name)?
+        if pigeons.key(name)? do
+          puts "#{name} is in hash"
 #          if pigeons[name].key(key)?
 #            pigeons[name][key] << attribute
 #          else
 #            pigeons[name][key] = attribute
 #          end
         else 
+          puts "#{name} is not in hash"
           #pigeons[name] = {}
 #          pigeons[name][key] = attribute
         end
