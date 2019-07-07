@@ -18,7 +18,8 @@ def nyc_pigeon_organizer(data)
         else 
           puts "#{name} is not in hash"
           pigeons[name] = {}
-          #pigeons[name][key] = attribute
+          pigeons[name][key] = []
+          pigeons[name][key] = attribute
         end
       end
     end
