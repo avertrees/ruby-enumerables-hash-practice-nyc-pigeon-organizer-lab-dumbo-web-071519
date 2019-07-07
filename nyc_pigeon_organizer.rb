@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
       puts "this #{key} is #{attribute}"
       list.each do |name|
         puts "pigeons name is #{name}"
-        if pigeons.key(:name)? 
+        if pigeons.key(name)? 
           puts "#{name} is in hash"
 #          if pigeons[name].key(key)?
 #            pigeons[name][key] << attribute
