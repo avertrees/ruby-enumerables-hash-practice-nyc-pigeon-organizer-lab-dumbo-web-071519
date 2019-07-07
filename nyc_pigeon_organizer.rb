@@ -10,10 +10,13 @@ def nyc_pigeon_organizer(data)
         puts "pigeons name is #{name}"
         if pigeons.key(name)?
           if pigeons[name].key(key)?
-            pigeons[name][key]  attribute
+            pigeons[name][key] << attribute
+          else
+            pigeons[name][key] = attribute
+          end
         else 
           pigeons[name] = {}
-          pigeons[name]
+          pigeons[name][key] = attribute
         end
       end
     end
