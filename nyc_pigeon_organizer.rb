@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
             pigeons[name][key] = attribute
           end
         else 
-          pigeons[name] = {}
+          #pigeons[name] = {}
           pigeons[name][key] = attribute
         end
       end
