@@ -10,15 +10,15 @@ def nyc_pigeon_organizer(data)
         puts "pigeons name is #{name}"
         if pigeons.has_key? name 
           puts "#{name} is in hash"
-#          if pigeons[name].key(key)?
-#            pigeons[name][key] << attribute
-#          else
-#            pigeons[name][key] = attribute
-#          end
+          if pigeons[name].has_key? key
+            pigeons[name][key] << attribute
+          else
+            pigeons[name][key] = attribute
+          end
         else 
           puts "#{name} is not in hash"
-          #pigeons[name] = {}
-#          pigeons[name][key] = attribute
+          pigeons[name] = {}
+          pigeons[name][key] = attribute
         end
       end
     end
