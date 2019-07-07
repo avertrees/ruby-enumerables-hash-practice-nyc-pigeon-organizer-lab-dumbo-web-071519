@@ -7,7 +7,8 @@ def nyc_pigeon_organizer(data)
     value.each do |attribute, list|
       puts "this #{key} is #{attribute}"
       list.each do |name|
-        pigeons[name][key] = attribute
+        puts "pigeons name is #{name}"
+        #pigeons[name][key] = attribute
       end
     end
   end
