@@ -9,7 +9,11 @@ def nyc_pigeon_organizer(data)
       list.each do |name|
         puts "pigeons name is #{name}"
         if pigeons.key(name)?
-          pigeons[name][key] = attribute
+          if pigeons[name].key(key)?
+            pigeons[name][key]  attribute
+        else 
+          pigeons[name] = {}
+          pigeons[name]
         end
       end
     end
